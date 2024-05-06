@@ -1,0 +1,283 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    background:#eaecf0;
+    font-family:'Roboto', sans-serif;
+}
+
+p{
+    font-size:large;
+    margin:8px;
+}
+
+table{
+    border-collapse:collapse;
+    text-align:center;
+    width:100%;
+    padding:8px;
+}
+
+ul{
+    text-align:left;
+}
+
+th{
+    background:#eaecf0;
+}
+
+th,td{
+    border: 1px solid #a2a9b1;
+}
+
+td{
+    vertical-align:top;
+}
+
+header{
+    text-align:center;
+    background:#0B132B;
+    padding:5px;
+    color:white;
+}
+
+header h1{
+    margin:4px;
+}
+
+.socialMedia{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.socialMedia img{
+    height:24px;
+    width:24px;
+    margin:0 4px;
+}
+
+#currentDateSpan{
+    color:white;
+    float:left;
+}
+
+.subHeader{
+    text-align:right;
+    background:#1C2541;
+    padding:4px;
+}
+
+.subHeader a{
+    text-decoration:none;
+    color:white;
+}
+
+.subHeader img{
+    width:40px;
+    height:14px;
+    margin:0 0 0 8px;
+    padding:0;
+}
+
+.container{
+    position:sticky;
+    top:0;
+    overflow:hidden;
+    background:#3A506B;
+}
+
+.container .icon{
+    display:none;
+}
+
+.container a{
+    padding:16px;
+    margin:0;
+    text-decoration:none;
+    display:block;
+    border-right:1px solid white;
+    color:white;
+    text-align:center;
+    float:left;
+    width:20%;
+}
+
+.container a:hover{
+    background:#93A3B1;
+}
+
+.active{
+    background:#80DED9;
+}
+
+footer{
+    padding:8px;
+    text-align:center;
+    background:#3A506B;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+}
+
+div.content{
+    padding:16px;
+    margin-right:20%;
+    margin-left:20%;
+    justify-content:center;
+    align-items:center;
+    background:white;
+}
+
+div.contact{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+form{
+    font-size:22px;
+}
+input{
+    width:100%;
+}
+input,label,textarea{
+    margin:8px 0px;
+}
+textarea{
+    resize:none;
+}
+.formButton{
+    margin:0;
+    padding:4px 0px;
+    width:48%;
+    border-radius:22px;
+    border:1px solid black;
+}
+.error{
+    color:rgb(241, 16, 16);
+    font-size:16px;
+}
+#secondDivEN,#secondDivGR{
+    display:none;
+}
+
+.imgContainer{
+    overflow:hidden;
+    margin:4px;
+    border:1px solid #a2a9b1;
+}
+
+.imgContainer img{
+    float:left;
+    height:64%;
+    width:32%;
+    margin:4px;
+}
+.imgContainer h3{
+    text-align:center;
+    text-decoration:underline;
+}
+.imgContainer a{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+}
+#kateriniPhoto{
+    float:right;
+    width:32%;
+    height:32%;
+    overflow:hidden;
+}
+#uniPhoto{
+    float:right;
+    width:48%;
+    height:48%;
+    overflow:hidden;
+}
+#teamLogo{
+    float:right;
+}
+.refresh{
+    text-align:center;
+}
+
+@media only screen and (max-width:768px){
+    div.content{
+        width:100%;
+        margin:0;
+    }
+}
+
+@media only screen and (max-width:610px){
+    div.content{
+        width:100%;
+    }
+    header{
+        font-size:small;
+    }
+    .subHeader{
+        font-size:small;
+    }
+    .imgContainer img{
+        width:100%;
+        margin:4px;
+    }
+    .container{
+        position:relative;
+        top:0;
+    }
+    .container a{
+        display:none;
+        border:none;
+    }
+    .container a.icon{
+        float:right;
+        display:block;
+    }
+    .container a:hover{
+        background:#3A506B;
+    }
+    a.active:hover{
+        background:#80DED9;
+    }
+    #kateriniPhoto{
+        width:100%;
+        float:none;
+    }
+    #uniPhoto{
+        width:100%;
+        float:none;
+    }
+}
+
+@media only screen and (max-width:610px){
+    .container.responsive {position: relative;}
+    .container.responsive i{
+        float:right;
+    }
+    .container.responsive a {
+        float: left;
+        display: block;
+        text-align: left;
+        width:100%;
+    }
+    div.refresh h2{
+        font-size:small;
+    }
+}
+
+@media only screen and (max-width:360px){
+    #teamLogo{
+        width:100%;
+        float:none;
+    }
+}
+
+@media only screen and (max-width:330px){
+    .subHeader img{
+        width:32px;
+    }
+}

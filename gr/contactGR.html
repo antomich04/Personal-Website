@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Η Ιστοσελίδα Μου</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        footer{
+            position:relative;
+            bottom:0;
+            padding:8px 0;
+            width:100%;
+            margin:0;
+        }
+        div.content{
+            min-height:45.7em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Καλώς Ήλθατε Στην Σελίδα Μου!</h1>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/antonis_mihailos/" target="_blank"><img src="../Images/Instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100003301654261" target="_blank"><img src="../Images/Facebook.png" alt="Facebook"></a>
+            <a href="https://discord.com/users/michailos_21" target="_blank"><img src="../Images/Discord.png" alt="Discord"></a>
+        </div>
+    </header>
+    <div class="subHeader">
+        <span id="currentDateSpan"></span>
+        <a href="../en/contactEN.html">Press for English<img src="../Images/BritainFlag.png"></a>
+    </div>
+    <nav class="container" id="navBar">
+        <a href="javascript:void(0);" class="icon" onclick="resizeNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="indexGR.html">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</a>
+        <a href="myCityGR.html">ΚΑΤΕΡΙΝΗ</a>
+        <a href="myUniversityGR.html">ΠΑΝΕΠΙΣΤΗΜΙΟ</a>
+        <a href="footballGR.html">ΠΟΔΟΣΦΑΙΡΟ</a>
+        <a href="contactGR.html" class="active">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+    </nav>
+    <main>
+        <div class="content">
+            <h2 id="formGR" style="text-align:center;">Συμπληρώστε αυτήν τη φόρμα</h2>
+                <div class="contact" id="mainDivGR">
+                    <form>
+                        <label>Ονοματεπώνυμο:</label> <br>
+                        <input type="text" placeholder="John Doe" id="nameGR"> <br>
+                        <div id="nameErrorGR" class="error"></div>
+                        <label>Email:</label> <br>
+                        <input type="email" placeholder="JohnDoe@gmail.com" id="emailGR"> <br>
+                        <div id="emailErrorGR" class="error"></div>
+                        <label>Μήνυμα:</label> <br>
+                        <textarea rows="10" cols="40" id="textGR"></textarea> <br>
+                        <div id="textErrorGR" class="error"></div>
+                        <input type="reset" value="Επαναφορά" class="formButton">
+                        <input type="button" value="Υποβολή" class="formButton" onclick="checkSubmit()">
+                    </form>
+                </div>
+                <div class="contact" id="secondDivGR">
+                    <h2 style="text-align:center;">Το μήνυμά σας έχει σταλθεί!</h2>
+                    <div class="refresh">
+                        <h2>Η σελίδα θα ανανεωθεί αυτόματα σε 5 δευτερόλεπτα</h2>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Α.Μιχαήλος 2004-2024</p>
+    </footer>
+    <script src="../index.js"></script>
+</body>
+</html>

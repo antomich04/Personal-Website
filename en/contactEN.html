@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        footer{
+            position:relative;
+            bottom:0;
+            padding:8px 0;
+            width:100%;
+            margin:0;
+        }
+        div.content{
+            min-height:45.7em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO MY PAGE!</h1>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/antonis_mihailos/" target="_blank"><img src="../Images/Instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100003301654261" target="_blank"><img src="../Images/Facebook.png" alt="Facebook"></a>
+            <a href="https://discord.com/users/michailos_21" target="_blank"><img src="../Images/Discord.png" alt="Discord"></a>
+        </div>
+    </header>
+    <div class="subHeader">
+        <span id="currentDateSpan"></span>
+        <a href="../gr/contactGR.html">Πατήστε για Ελληνικά<img src="../Images/GreeceFlag.jpg"></a>
+    </div>
+    <nav class="container" id="navBar">
+        <a href="javascript:void(0);" class="icon" onclick="resizeNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="indexEN.html">HOME PAGE</a>
+        <a href="myCityEN.html">KATERINI</a>
+        <a href="myUniversityEN.html">UNIVERSITY</a>
+        <a href="footballEN.html">FOOTBALL</a>
+        <a href="contactEN.html" class="active">CONTACT</a>
+    </nav>
+    <main>
+        <div class="content">
+            <h2 id="formEN" style="text-align:center;">Fill in this form</h2>
+                <div class="contact" id="mainDivEN">
+                    <form>
+                        <label>Full Name:</label> <br>
+                        <input type="text" placeholder="John Doe" id="nameEN"> <br>
+                        <div id="nameErrorEN" class="error"></div>
+                        <label>Email:</label> <br>
+                        <input type="text" placeholder="JohnDoe@gmail.com" id="emailEN"> <br>
+                        <div id="emailErrorEN" class="error"></div>
+                        <label>Message:</label> <br>
+                        <textarea rows="10" cols="40" id="textEN"></textarea> <br>
+                        <div id="textErrorEN" class="error"></div>
+                        <input type="reset" class="formButton">
+                        <input type="button" class="formButton" value="Submit" onclick="checkSubmit()">
+                    </form>
+                </div>
+                <div class="contact" id="secondDivEN">
+                    <h2 style="text-align:center;">Your message has been sent!</h2>
+                    <div class="refresh">
+                        <h2>The page will automatically refresh in 5 seconds</h2>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; A.Michailos 2004-2024</p>
+    </footer>
+    <script src="../index.js"></script>
+</body>
+</html>
